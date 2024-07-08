@@ -1,0 +1,823 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  text-align: center;
+  /* background-color: rgb(245, 13, 13);
+  background-color: black;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  ); */
+}
+.header {
+  padding-left: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 255, 0);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.header-left-content {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  position: relative;
+  animation: fall 2s forwards;
+}
+.header-image {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  width: 85px;
+  height: 85px;
+  border-radius: 7rem;
+  transition: all 1s ease-in-out 0.1s;
+}
+.header-image:hover {
+  transform: rotate(360deg);
+}
+.header-right-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
+  padding-right: 7.5rem;
+}
+.header-right-content1 {
+  font-size: 20px;
+  font-weight: 100;
+  color: black;
+  opacity: 0;
+  position: relative;
+  animation: fall 2s forwards;
+}
+@keyframes fall {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.header-left-content {
+  animation-delay: 0ms;
+}
+.header-right-content1:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.header-right-content1:nth-child(2) {
+  animation-delay: 1s;
+}
+.header-right-content1:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.header-right-content1:nth-child(4) {
+  animation-delay: 2s;
+}
+.header-right-content1:nth-child(5) {
+  animation-delay: 2.5s;
+}
+.header-right-content1:nth-child(6) {
+  animation-delay: 3s;
+}
+.header-right-content1:hover {
+  color: orangered;
+  font-weight: bolder;
+}
+.content1 {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  padding-top: 6rem;
+  max-height: 40rem;
+}
+.content1-left {
+  margin-top: 8.5rem;
+  margin-left: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content1-left-details {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: rotate(-360deg) translateX(100px);
+  animation: rotate 1s forwards;
+  animation-delay: 4s;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: rotate(-360deg) translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translateY(0);
+  }
+}
+.content-left-name {
+  text-align: left;
+}
+.hello {
+  font-size: 30px;
+  color: white;
+}
+.name-details {
+  font-size: 75px;
+  color: white;
+}
+.about-myself {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  position: inline-block;
+}
+.myself {
+  font-size: 29px;
+  color: white;
+}
+.programmer {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(4, 255, 58);
+  animation: bounce 2s ease-in-out infinite;
+}
+.programmer::after {
+  content: "|";
+  animation: blink 0.4s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.content1-left-hire {
+  margin-top: 1.3rem;
+  text-align: left;
+}
+.hiring-button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.2rem;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(248, 74, 103);
+  border: none;
+}
+.hiring-button:hover {
+  background-color: whitesmoke;
+  color: red;
+}
+.content1-right {
+  margin-left: 15rem;
+}
+.piyush-image1 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  max-height: 27rem;
+  width: 19rem;
+  border-radius: 2rem;
+}
+.content2 {
+  padding: 3rem;
+  padding-left: 8rem;
+  background-color: whitesmoke;
+}
+.content2-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutmyself {
+  font-size: 40px;
+  font-weight: bold;
+}
+.myinformation {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+.itsme {
+  margin-top: 0.1rem;
+  font-size: 23px;
+  font-weight: 400;
+  color: rgb(0, 255, 0);
+}
+.underline {
+  font-weight: bold;
+}
+.content2-bottom {
+  padding: 3rem;
+  display: flex;
+  gap: 3rem;
+}
+.piyush-second-img {
+  max-height: 25rem;
+  width: 15rem;
+  border-radius: 1rem;
+}
+.content2-bottom-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+  margin-top: 3rem;
+}
+.information {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+}
+.content2-heading2 {
+  color: rgb(6, 255, 6);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(1, 255, 1);
+  width: 20ch;
+  animation: typing 2s steps(11) infinite;
+  animation: blink 0.5s step-end infinite alternate;
+  animation: deleting 3s steps(15) 2s infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 14ch;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes deleting {
+  0%,
+  50% {
+    width: 14ch;
+  }
+  100% {
+    width: 0;
+  }
+}
+.content2-paragraph {
+  max-width: 50rem;
+  text-align: justify;
+  font-size: 19px;
+  color: black;
+  gap: 0.5rem;
+  word-spacing: 2px;
+}
+.content2-button {
+  text-align: left;
+}
+.content2-bottom-button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.2rem;
+  font-size: 20px;
+  color: black;
+  background-color: rgb(248, 74, 103);
+  border: none;
+}
+.content2-bottom-button:hover {
+  background-color: black;
+  color: red;
+}
+.content3 {
+  padding-top: 3.5rem;
+  padding-left: 5.5rem;
+  background-color: black;
+}
+.content3-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-myself {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.my-information {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+.its-me {
+  margin-top: 0.2rem;
+  font-size: 23px;
+  font-weight: 400;
+  color: rgb(0, 255, 0);
+}
+.underline2 {
+  font-weight: bold;
+  color: white;
+}
+.content3-bottom {
+  max-width: 1170px;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  padding-bottom: 3.5rem;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1rem;
+}
+.content3-bottom-box {
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: rgb(59, 56, 56);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.content3-bottom-box:hover {
+  background-color: rgb(8, 255, 8);
+  .webdev-img,
+  .appdev-img,
+  .comp-prog-img {
+    scale: 1.2;
+    box-shadow: 0 0 0 3px whitesmoke;
+  }
+  .content3-heading {
+    scale: 1.5;
+    font-style: italic;
+  }
+  .content3-paragraph1,
+  .content3-paragraph2,
+  .content3-paragraph3 {
+    font-style: italic;
+  }
+}
+.content3-heading {
+  color: white;
+}
+.webdev-img {
+  height: 6rem;
+  width: 7rem;
+  margin-top: 1rem;
+  border-radius: 4rem;
+  box-shadow: 0 0 0 3px rgb(0, 255, 0);
+}
+.appdev-img {
+  height: 6rem;
+  width: 7rem;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0 3px rgb(0, 255, 0);
+}
+.comp-prog-img {
+  height: 6rem;
+  width: 7rem;
+  margin-top: 1rem;
+  border-radius: 4rem;
+  box-shadow: 0 0 0 3px rgb(0, 255, 0);
+}
+.content3-paragraph1 {
+  padding: 0.5rem;
+  text-align: justify;
+  color: white;
+}
+.content3-paragraph2 {
+  margin-bottom: 1rem;
+  color: white;
+}
+.content3-paragraph3 {
+  padding: 0.57rem;
+  text-align: justify;
+  color: white;
+}
+.content4 {
+  background-color: whitesmoke;
+  padding-left: 5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 9.5rem;
+}
+.content4-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about--myself {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+.my--information {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+.its--me {
+  margin-top: 0.2rem;
+  font-size: 23px;
+  font-weight: 400;
+  color: rgb(0, 255, 0);
+}
+.underline4 {
+  font-weight: bold;
+  color: black;
+}
+.content4-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+.content4-bottom-left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.content4-paragraph {
+  margin-top: 0.5rem;
+  font-size: 19px;
+  word-spacing: 0.2rem;
+  text-align: justify;
+}
+.content4-bottom-button {
+  margin-top: 1.5rem;
+}
+.content4-button {
+  padding: 0.6rem 1.3rem;
+  border-radius: 0.2rem;
+  font-size: 20px;
+  color: black;
+  background-color: rgb(248, 74, 103);
+  border: none;
+}
+.content4-button:hover {
+  background-color: black;
+  color: red;
+}
+.content-4-bottom-right {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 4.5rem;
+  max-height: 20rem;
+}
+.box1 {
+  display: flex;
+  justify-content: row;
+  gap: 27.3rem;
+  font-weight: bolder;
+  margin-top: 1.7rem;
+}
+.box3 {
+  display: flex;
+  justify-content: row;
+  gap: 28rem;
+  font-weight: bolder;
+  margin-top: 1.7rem;
+}
+.box5 {
+  display: flex;
+  justify-content: row;
+  gap: 25.5rem;
+  font-weight: bolder;
+  margin-top: 1.7rem;
+}
+.box7 {
+  display: flex;
+  justify-content: row;
+  gap: 26.6rem;
+  font-weight: bolder;
+  margin-top: 1.7rem;
+}
+.box9 {
+  display: flex;
+  justify-content: row;
+  gap: 28rem;
+  font-weight: bolder;
+  margin-top: 1.7rem;
+}
+.BOX {
+  display: flex;
+  flex-direction: row;
+}
+.box2-dummy1 {
+  padding: 0.1rem 15rem;
+  background-color: rgb(1, 255, 1);
+  border: none;
+}
+.box2-dummy2 {
+  padding: 0.1rem 1.4rem;
+  background-color: darkorange;
+  border: none;
+}
+.box4-dummy1 {
+  padding: 0.1rem 14rem;
+  background-color: rgb(1, 255, 1);
+  border: none;
+}
+.box4-dummy2 {
+  padding: 0.1rem 2.4rem;
+  background-color: darkorange;
+  border: none;
+}
+.box6-dummy1 {
+  padding: 0.1rem 12rem;
+  background-color: rgb(1, 255, 1);
+  border: none;
+}
+.box6-dummy2 {
+  padding: 0.1rem 4.4rem;
+  background-color: darkorange;
+  border: none;
+}
+.box8-dummy1 {
+  padding: 0.1rem 13rem;
+  background-color: rgb(1, 255, 1);
+  border: none;
+}
+.box8-dummy2 {
+  padding: 0.1rem 3.4rem;
+  background-color: darkorange;
+  border: none;
+}
+.box10-dummy1 {
+  padding: 0.1rem 12rem;
+  background-color: rgb(1, 255, 1);
+  border: none;
+}
+.box10-dummy2 {
+  padding: 0.1rem 4.4rem;
+  background-color: darkorange;
+  border: none;
+}
+.content5 {
+  padding-top: 3.5rem;
+  padding-left: 5rem;
+  padding-bottom: 13rem;
+  background-color: black;
+}
+.content5-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about_myself {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.my_information {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+.its_me {
+  margin-top: 0.2rem;
+  font-size: 23px;
+  font-weight: 400;
+  color: rgb(0, 255, 0);
+}
+.underline5 {
+  font-weight: bold;
+  color: white;
+}
+.content5-bottom {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-right: 5rem;
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 90%;
+  display: flex;
+  scrollbar-width: none;
+}
+.content5-box {
+  align-items: center;
+  border-radius: 0.2rem;
+  color: white;
+  width: 30%;
+  height: 200px;
+  background-color: rgb(44, 42, 42);
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  flex: 0 0 auto;
+}
+.content5-box:hover {
+  background-color: rgb(4, 255, 4);
+  .content5-heading {
+    transform: scale(1.5);
+    font-style: italic;
+    color: black;
+  }
+  .content5-para {
+    font-style: oblique;
+    color: red;
+    transform: scale(1.3);
+  }
+  .content5-img {
+    box-shadow: 0 0 0 3px white;
+  }
+}
+.content5-img {
+  margin-top: 0.7rem;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 4rem;
+  box-shadow: 0 0 0 3px rgb(0, 255, 0);
+}
+.content5-heading {
+  font-size: 25px;
+}
+.content5-para {
+  margin-top: 0.5rem;
+  font-size: 20px;
+}
+.content6 {
+  padding-left: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  background-color: white;
+}
+.content6-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__myself {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+.my__information {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+.its__me {
+  margin-top: 0.2rem;
+  font-size: 23px;
+  font-weight: 400;
+  color: rgb(0, 255, 0);
+}
+.underline6 {
+  font-weight: bold;
+  color: black;
+}
+.content6-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
+}
+.content6-bottom-left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 4rem;
+}
+.content6-contact {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.content6-bottom-img {
+  border-radius: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+.content6-bottom-heading {
+  font-size: 1.3rem;
+}
+.content6-bottom-anchor {
+  font-size: 1.2rem;
+  color: black;
+}
+.content6-bottom-anchor:hover {
+  color: red;
+}
+.content6-bottom-right {
+  text-align: left;
+}
+.details1 {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.content6-details1 {
+  padding: 0.5rem 1.3rem;
+  background-color: rgb(160, 252, 23);
+  border: none;
+}
+.details2 {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-right: 12.2rem;
+}
+.content6-details2 {
+  padding: 1rem 0.5rem;
+  background-color: rgb(160, 252, 23);
+  border: none;
+}
+.content6-button {
+  text-align: left;
+  margin-top: 2rem;
+}
+.content6-send-button {
+  padding: 0.5rem 1.3rem;
+  border-radius: 0.2rem;
+  font-size: 20px;
+  color: black;
+  background-color: rgb(248, 74, 103);
+  border: none;
+}
+.content6-send-button:hover {
+  background-color: black;
+  color: red;
+}
+.content7-bottom {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  padding-top: 1.5rem;
+  padding-bottom: 0.9rem;
+  padding-left: 32rem;
+}
+.content7-box1 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+}
+.content7-para1 {
+  font-size: 18px;
+  color: white;
+}
+.content7-para2 {
+  color: rgb(0, 255, 0);
+  font-size: 18px;
+}
+.content7-box2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  margin-left: 0.2rem;
+}
+.content7-para3 {
+  font-size: 18px;
+  color: white;
+}
+.content7-para4 {
+  font-size: 18px;
+  color: white;
+}
+.content7-img {
+  height: 1rem;
+  width: 1rem;
+}
+.content7-right-button {
+  display: flex;
+  margin-left: 23rem;
+}
+.myBtn {
+  background-color: rgb(0, 255, 0);
+  width: 2rem;
+  height: 2rem;
+  font-size: 2.5rem;
+  border-radius: 5px;
+}
