@@ -8,23 +8,31 @@ document.querySelectorAll("nav a").forEach((anchor) => {
   });
 });
 
-let button1=document.getElementById('#download-cv');
+let button1=document.getElementById('download-cv');
 button1.addEventListener('click',()=>{
-    window.location.href="http://127.0.0.1:5500/piyush%20portfolio/cv.html";
+    window.location.href="http://127.0.0.1:5500/cv.html";
 })
+ 
 
-
-let button2=document.getElementById('#read-more');
+let button2=document.getElementById('read-more');
 button2.addEventListener('click',()=>{
-    window.location.href="http://127.0.0.1:5500/piyush%20portfolio/readmore.html";
-})
-
-let button3=document.getElementById('#send-msg');
-button3.addEventListener('click',()=>{
-    window.location.href="http://127.0.0.1:5500/piyush%20portfolio/sending.html";
+    window.location.href="http://127.0.0.1:5500/readmore.html";
 })
 
 
+function handleSubmit(event) {
+  event.preventDefault();
+  
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const subject = document.getElementById('subject').value;
+  const message = document.getElementById('message').value;
+
+  alert(`Thank you, ${name}. Your message has been received!`);
+  
+   
+  document.getElementById('contact-form').reset();
+};
 
 
 
