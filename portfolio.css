@@ -11,7 +11,7 @@ body {
   background-image: linear-gradient(
     225deg,
     #ff3cac 0%,
-    #784ba0 50%,
+    #784ba0 50%, 
     #2b86c5 100%;
   ); */
 }
@@ -302,6 +302,7 @@ body {
   text-align: left;
 }
 .content2-bottom-button {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 0.6rem 1.5rem;
   border-radius: 0.2rem;
   font-size: 20px;
@@ -365,7 +366,8 @@ body {
 }
 .content3-bottom-box:hover {
   /* background-color: rgb(8, 255, 8); */
-  background-color: maroon;
+  background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   .webdev-img,
   .appdev-img,
   .comp-prog-img {
@@ -470,8 +472,10 @@ body {
 }
 .content4-bottom-button {
   margin-top: 1.5rem;
+
 }
 .content4-button {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 0.6rem 1.3rem;
   border-radius: 0.2rem;
   font-size: 20px;
@@ -742,7 +746,7 @@ body {
   gap: 1rem;
 }
 .content6-details1 {
-  padding: 0.5rem 1.3rem;
+  padding: 0.5rem 2rem;
   background-color: rgb(160, 252, 23);
   border: none;
 }
@@ -750,20 +754,20 @@ body {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  margin-right: 11.5rem;
   gap: 1rem;
-  margin-right: 12.2rem;
 }
 .content6-details2 {
-  padding: 1rem 0.5rem;
+  padding: 0.6rem 0.5rem;
   background-color: rgb(160, 252, 23);
   border: none;
 }
 .content6-button {
   text-align: left;
-  margin-top: 2rem;
 }
 .content6-send-button {
-  padding: 0.5rem 1.3rem;
+  padding: 0.5rem 1.2rem;
+  margin-right: 25rem;
   border-radius: 0.2rem;
   font-size: 20px;
   color: black;
@@ -773,7 +777,9 @@ body {
 .content6-send-button:hover {
   background-color: black;
   color: red;
-}
+} 
+
+
 .content7-bottom {
   display: flex;
   flex-direction: row;
