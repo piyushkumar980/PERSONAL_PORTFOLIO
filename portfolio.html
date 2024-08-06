@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>piyush portfolio</title>
     <link rel="stylesheet" href="portfolio.css" />
   </head>
   <body>
-    <div class="header">
+    <div class="header"> 
       <div class="header-left-content">
         <img class="header-image" src="fox image.jpg" alt="image" />
       </div>
 
-      <div class="header-right-content">
-        <a class="header-right-content1" href="# home">Home</a>
-        <a class="header-right-content1" href="# about">About</a>
-        <a class="header-right-content1" href="# services">Services</a>
-        <a class="header-right-content1" href="# skills">Skills</a>
-        <a class="header-right-content1" href="# teams">Teams</a>
-        <a class="header-right-content1" href="# contact">Contact</a>
-      </div>
+      <nav class="header-right-content">
+        <a href="#home" class="header-right-content1">Home</a>
+        <a href="#about" class="header-right-content1">About</a>
+        <a href="#services" class="header-right-content1">Services</a>
+        <a href="#skills" class="header-right-content1">Skills</a>
+        <a href="#teams" class="header-right-content1">Teams</a>
+        <a href="#contact" class="header-right-content1">Contact</a>
+      </nav>
     </div>
 
-    <div class="content1">
+    <section class="content1" id="home">
       <div class="content1-left">
         <div class="content1-left-details">
           <div class="content-left-name">
@@ -30,7 +29,7 @@
             <h1 class="name-details">Piyush kumar</h1>
           </div>
 
-          <div class="about-myself">
+          <div class="about-myself"> 
             <span class="myself">I'm a</span>
             <span class="programmer" data-text="piyush"
               >competitive programmer...</span
@@ -49,10 +48,15 @@
           src="piyush image duplicate.png"
           alt="PIYUSH KUMAR"
         />
+        <!-- <img
+          class="piyush-image1"
+          src="piyush profile img.jpg"
+          alt="PIYUSH KUMAR"
+        /> -->
       </div>
-    </div>
+    </section>
 
-    <div class="content2">
+    <section class="content2" id="about">
       <div class="content2-top">
         <div class="aboutmyself">About me</div>
         <div class="myinformation">
@@ -89,17 +93,14 @@
             and create something extraordinary!
           </p>
           <div class="content2-button">
-            <a
-              class="content2-bottom-button"
-              href="C:\Users\User\OneDrive\Documents"
-              >Download CV</a
-            >
+            <button id="download-cv"
+            class="content2-bottom-button">Download CV</button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="content3">
+    <section class="content3" id="services">
       <div class="content3-top">
         <div class="about-myself">My Services</div>
         <div class="my-information">
@@ -160,9 +161,9 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="content4">
+    <section class="content4" id="skills">
       <div class="content4-top">
         <div class="about--myself">My Skills</div>
         <div class="my--information">
@@ -187,11 +188,8 @@
           </p>
 
           <div class="content4-bottom-button">
-            <a
-              class="content4-button"
-              href="http://127.0.0.1:5500/piyush%20portfolio/readmore.html"
-              >Read more</a
-            >
+            <button id="read-more"
+            class="content4-button">Read more</button>
           </div>
         </div>
 
@@ -247,9 +245,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="content5">
+    <section class="content5" id="teams">
       <div class="content5-top">
         <div class="about_myself">My teams</div>
         <div class="myinformation">
@@ -281,7 +279,7 @@
         <div class="content5-box">
           <img class="content5-img" src="utsav img.jpg" alt="" />
           <h2 class="content5-heading">Utsav Anand</h2>
-          <p class="content5-para">Data Analyst</p>
+          <p class="content5-para">Decision Scientist</p>
         </div>
 
         <div class="content5-box">
@@ -305,7 +303,7 @@
         <div class="content5-box">
           <img class="content5-img" src="satyam img.jpg" alt="" />
           <h2 class="content5-heading">Satyam Pandey</h2>
-          <p class="content5-para">Flutter Developer</p>
+          <p class="content5-para">Data Analyst</p>
         </div>
 
         <div class="content5-box">
@@ -314,9 +312,9 @@
           <p class="content5-para">Machine Learning</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="content6">
+    <section class="content6" id="contact">
       <div class="content6-top">
         <div class="about__myself">Contact me</div>
         <div class="my__information">
@@ -377,15 +375,15 @@
               <p class="content6-bottom-para">
                 piyushkumarofficial980@outlook.com
               </p> -->
-              <a
+              <p
                 class="content6-bottom-anchor"
                 href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act"
-                >piyushkumarofficial980@gmail.com</a
+                >piyushkumarofficial980@gmail.com</p
               >
-              <a
+              <p
                 class="content6-bottom-anchor"
                 href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=154&ct=1719387633&rver=7.5.2156.0&wp=SA_20MIN&wreply=https%3A%2F%2Faccount.live.com%2Fproofs%2Fcheckup%2Fphone%3Fuaid%3Dfefca1a32637f29bf575209de847d44a%26cv%3Dqn619WMZK0agI0Q4.11.24%26client_id%3D4831683A%26client_flight%3Dcmmxntmn2zi%26ru%3Dhttps%253A%252F%252Faccount.microsoft.com%252Fprofile%253Flang%253Den-US%2526status%253Dcancelled%2526res%253Dacw_landing_page_cancelled%2523main-content-landing-react%26mkt%3Den-US%26origin%3DAMC_Profile%26launchMethod%3DmessageBarCtaClick%26renderMode%3Dundefined%26sru%3Dhttps%253A%252F%252Faccount.microsoft.com%252Faccount-checkup%253Fuaid%253Dfefca1a32637f29bf575209de847d44a%2526cv%253Dqn619WMZK0agI0Q4.11.24%2526client_id%253D4831683A%2526client_flight%253Dcmmxntmn2zi%2526launchMethod%253DmessageBarCtaClick%2526mkt%253Den-US%2526origin%253DAMC_Profile%2526ru%253Dhttps%25253A%25252F%25252Faccount.microsoft.com%25252Fprofile%25253Flang%25253Den-US%252526status%25253Dcancelled%252526res%25253Dacw_landing_page_cancelled%252523main-content-landing-react&lc=1033&id=38936&mkt=en-US&uaid=fefca1a32637f29bf575209de847d44a&client_flight=cmmxntmn2zi"
-                >piyushkumarofficial980@outlook.com</a
+                >piyushkumarofficial980@outlook.com</p
               >
             </div>
           </div>
@@ -393,27 +391,22 @@
 
         <div class="content6-bottom-right">
           <h2 class="content6-heading1">Message me:-</h2>
-
-          <form class="details1">
-            <input class="content6-details1" placeholder="Name" />
-            <input class="content6-details1" placeholder="Email" />
-          </form>
-
-          <form class="details2">
-            <input class="content6-details2" placeholder="Subject" />
-            <input class="content6-details2" placeholder="Message" />
-          </form>
-
-          <div class="content6-button">
-            <a
-              class="content6-send-button"
-              href="http://127.0.0.1:5500/piyush%20portfolio/sending.html"
-              >Send message</a
-            >
+          <form id="contact-form" onsubmit="handleSubmit(event)">
+             <div class="details1">
+            <input type="text" id="name" name="name" required placeholder="Name" class="content6-details1">
+            <input type="email" id="email" name="email" required placeholder="Email" class="content6-details1">
           </div>
+
+          <div class="details2">
+            <textarea id="subject" name="subject" required placeholder="Subject" class="content6-details2"></textarea>
+            <textarea id="message" name="message" required placeholder="Message" class="content6-details2"></textarea>
+            <button type="submit" class="content6-send-button">Send</button>
+          </form>
+        </div>
+       
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="content7-bottom">
       <div class="content7-box1">
@@ -427,9 +420,10 @@
         <p class="content7-para4">2024 All rights reserved.</p>
       </div>
 
-      <div class="content7-right-button">
-        <button class="myBtn">^</button>
-      </div>
+      <!-- <div class="content7-right-button">
+        <button id="scrollToTopBtn" title="Go to top" class="myBtn">^</button>
+      </div> -->
     </div>
+    <script src="portfolio.js"></script>
   </body>
 </html>
