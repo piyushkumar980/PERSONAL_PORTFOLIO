@@ -8,19 +8,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-
-
 // document.getElementById("cv-button").addEventListener("click", function () {
 //   window.open("portfolio 2/images/piyushcv.jpg", "_blank");
 // });
-
-
-
-
-
-
-
-
 
 function openLink(url) {
   window.open(url, "_blank"); // for opening the URL in a new tab
@@ -28,7 +18,7 @@ function openLink(url) {
 
 const images = document.querySelectorAll(".image-container img");
 const textBlocks = document.querySelectorAll(".text-block");
-  
+
 images.forEach((image) => {
   image.addEventListener("mouseover", function () {
     // Hide all text blocks
@@ -75,16 +65,14 @@ mybutton.onclick = function () {
   document.documentElement.scrollTop = 0;
 };
 
-
-
-
 // Function to detect if the browser is Edge
 function isEdge() {
-  return /Edg/.test(navigator.userAgent);  // Edge has "Edg" in its userAgent string
+  return /Edg/.test(navigator.userAgent); // Edge has "Edg" in its userAgent string
 }
 
-// Check if the browser is Edge
-if (isEdge()) {
-  document.body.classList.add('edge');
-}
-
+// Add the 'edge' class if the browser is Edge
+document.addEventListener("DOMContentLoaded", () => {
+  if (isEdge()) {
+    document.body.classList.add("edge");
+  }
+});
