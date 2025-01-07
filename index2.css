@@ -5,6 +5,10 @@
 }
 body {
   text-align: center;
+  width: 100%;
+}
+body.edge {
+  width: 105vw;
 }
 .header {
   display: flex;
