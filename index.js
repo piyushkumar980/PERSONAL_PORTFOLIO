@@ -74,3 +74,17 @@ mybutton.onclick = function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 };
+
+
+
+
+// Function to detect if the browser is Edge
+function isEdge() {
+  return /Edg/.test(navigator.userAgent);  // Edge has "Edg" in its userAgent string
+}
+
+// Check if the browser is Edge
+if (isEdge()) {
+  document.body.classList.add('edge');
+}
+
