@@ -76,3 +76,49 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("edge");
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+// Function to detect browser and display message if not Edge
+function detectEdgeBrowser() {
+  const userAgent = navigator.userAgent;
+
+  // Check if the browser is not Microsoft Edge
+  if (!userAgent.includes("Edg")) {
+    // Create a notification element
+    const warningMessage = document.createElement("div");
+    warningMessage.style.position = "fixed";
+    warningMessage.style.top = "0";
+    warningMessage.style.left = "0";
+    warningMessage.style.width = "100%";
+    warningMessage.style.backgroundColor = "#f8d7da";
+    warningMessage.style.color = "#721c24";
+    warningMessage.style.padding = "10px";
+    warningMessage.style.textAlign = "center";
+    warningMessage.style.fontFamily = "Arial, sans-serif";
+    warningMessage.style.zIndex = "9999";
+    warningMessage.innerHTML = `
+      <p>
+        For the best experience, please open this site in 
+        <a href="https://www.microsoft.com/edge" target="_blank" style="color: #004085; text-decoration: underline;">
+          Microsoft Edge
+        </a>.
+      </p>
+    `;
+    
+    // Append the warning message to the body
+    document.body.appendChild(warningMessage);
+  }
+}
+
+// Run the function to detect the browser when the page loads
+window.onload = detectEdgeBrowser;
+
