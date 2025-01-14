@@ -310,9 +310,9 @@ body.edge {
 }
 .last-div:hover {
   border-color: rgb(69, 206, 74);
+  background-color: black;
   .last-para {
     color: rgb(148 163 184);
-    background-color: black;
   }
 }
 .last-para {
@@ -354,6 +354,21 @@ body.edge {
   height: 35px;
   width: 35px;
   border-radius: 4px;
+}
+.fc-details{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.fc-btn{
+  padding: 10px 15px;
+  border-radius: 10px;
+  border-color:darkslategrey;
+  font-size: 0.8rem;
+  background-color: antiquewhite;
+}
+#fc-offerletter{
+  margin-left: 40px;
 }
 .content1-right {
   margin-left: 8rem;
